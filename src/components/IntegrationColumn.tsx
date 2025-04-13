@@ -32,7 +32,8 @@ const IntegrationColumn: React.FC<Props> = (props) => {
       >
         {Array.from({ length: 2 }).map((_, i) => (
           <Fragment key={i}>
-            {integrations?.map((integration: any) => (
+            
+            {integrations?.map((integration) => (
               <div
                 key={integration.name}
                 className="bg-neutral-900 border border-white/10 rounded-3xl p-6"

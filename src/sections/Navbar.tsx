@@ -1,7 +1,7 @@
 "use client";
 import logoImage from "@/assets/images/logo.svg";
 import Image from "next/image";
-import hambugImg from "@/assets/images/menu.svg";
+
 import { IoMenu } from "react-icons/io5";
 import Button from "@/components/Button";
 import { useState } from "react";
