@@ -41,14 +41,14 @@ export default function Hero() {
         { opacity: 1 },
         { duration: 0.5, delay: 1.5 },
       ],
-      [rightPointerScope.current, { x: 175, y: 0 }, { duration: 0.5 }],
-      [rightPointerScope.current, { x: 0, y: [0, 20, 0] }, { duration: 0.5 }],
+      [rightPointerScope.current, { x: 175, y: 200 }, { duration: 0.5 }],
+      [rightPointerScope.current, { x: 0, y: [200, 220, 200] }, { duration: 0.5 }],
     ]);
   }, []);
 
   return (
     <section
-      className="py-24 overflow-x-clip"
+      className="py-24"
       style={{ cursor: `url(${cursorYou.src}),auto` }}
     >
       <div className="container relative">
@@ -86,7 +86,7 @@ export default function Hero() {
 
         <motion.div
           ref={rightPointerScope}
-          initial={{ opacity: 0, x: 275, y: 100 }}
+          initial={{ opacity: 0, x: 275, y: 500 }}
           className="absolute right-80 -top-4 hidden lg:block"
         >
           <Pointer name="Bryan" color="red" />
